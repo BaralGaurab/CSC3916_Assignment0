@@ -1,0 +1,35 @@
+Content-Type: application/json; charset=UTF-8
+Means that the response is in JSON format with UTF-8 character encoding.
+
+Vary: Origin
+Tells caches or proxies that responses may vary based on the request’s Origin header.
+
+Vary: X-Origin
+It is similar to above—response can differ based on the X-Origin header.
+
+Vary: Referer
+Response may also be different based on the Referer header in the request.
+
+Content-Encoding: gzip
+Says that the response body is compressed using gzip.
+
+Date: Sun, 02 Feb 2025 22:06:39 GMT
+The date and time when the server generated the response.
+
+Server: ESF
+Identifies the server or proxy handling the request (Google’s “ESF” front-end).
+
+X-XSS-Protection: 0
+Disables the browser’s built-in XSS (cross-site scripting) protection.
+
+X-Frame-Options: SAMEORIGIN
+Disallows displaying the page in an iframe unless it is from the same origin.
+
+X-Content-Type-Options: nosniff
+Tells the browsers not to try to guess/sniff the MIME type.
+
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Provides alternative services (HTTP/3) and their max-age for connections.
+
+Transfer-Encoding: chunked
+Means that the response is sent in a series of chunks rather than as a single block.
